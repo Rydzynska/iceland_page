@@ -1,0 +1,48 @@
+---
+title: Galeria
+layout: page
+images:
+  - name: iceland-0001.jpg
+    caption: Południe Islandii, 10km od wodospadu Skógafoss
+  - name: iceland-0002.jpg
+    caption: Trasa ze Skógafoss do Þórsmörk
+  - name: iceland-0003.jpg
+    caption: Trasa ze Skógafoss do Þórsmörk
+  - name: iceland-0004.jpg
+    caption: Trasa ze Skógafoss do Þórsmörk
+  - name: iceland-0005.jpg
+    caption: Trasa z Emstur/Botnar do Álftavatn
+  - name: iceland-0006.jpg
+    caption: Trasa z Álftavatn do Landmannalaugar
+  - name: iceland-0007.jpg
+    caption: Trasa z Álftavatn do Landmannalaugar
+  - name: iceland-0008.jpg
+    caption: Pole namiotowe w Landmannalaugar
+  - name: iceland-0009.jpg
+    caption: Wodospad Góðafoss
+  - name: iceland-0010.jpg
+    caption: Trasa z Dettifoss do Ásbyrgi
+  - name: iceland-0011.jpg
+    caption: Kolacja
+  - name: iceland-0012.jpg
+    caption: Port w Húsavíku
+  - name: iceland-0013.jpg
+    caption: Statek, którym płynęliśmy oglądać wieloryby w Húsavíku
+  - name: iceland-0014.jpg
+    caption: Hverfjall - krater niedaleko Reykjahliðu
+  - name: iceland-0015.jpg
+    caption: Droga z Hveravellir do Hvitarnes
+  - name: iceland-0016.jpg
+    caption: Reykiavík
+  - name: iceland-0017.jpg
+    caption: "\"Free stuff\" na campingu w Reykiavíku"
+---
+<h1>Galeria</h1>
+{% for image in page.images %}
+<figure>
+  <a href="media/iceland/big/{{image.name}}" target="_blank">
+    <img src="media/iceland/small/{{image.name}}" alt="Iceland" style="max-width:100%"/>
+  </a>
+  <figcaption>{{image.caption}}</figcaption>
+</figure>
+{% endfor %}

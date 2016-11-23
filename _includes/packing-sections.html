@@ -1,0 +1,22 @@
+{% for section in include.sections %}
+<table class="dense-table packing">
+<thead>
+  <tr>
+    <th class="packing-item">{{ section.section }}</th>
+    <th class="packing-description"></th>
+    <th class="packing-weight">Waga</th>
+    <th class="packing-comment">Komentarz</th>
+  </tr>
+</thead>
+<tbody>
+  {% for item in section.items %}
+  <tr>
+      <td class="packing-item">{{ item.i }}</td>
+      <td class="packing-description">{{ item.d }}</td>
+      <td class="packing-weight">{{ item.w }}</td>
+      <td class="packing-comment">{{ item.c }}</td>
+  </tr>
+  {% endfor %}
+</tbody>
+</table>
+{% endfor %}
